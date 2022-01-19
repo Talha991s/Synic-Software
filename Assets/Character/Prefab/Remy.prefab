@@ -1813,11 +1813,12 @@ GameObject:
   - component: {fileID: 6186577522972176558}
   - component: {fileID: 5931691541947897645}
   - component: {fileID: 919132148774840058}
-  - component: {fileID: 2009630329934838701}
   - component: {fileID: 919132148774840060}
+  - component: {fileID: 2009630329934838701}
+  - component: {fileID: 2625879324095087424}
   m_Layer: 0
   m_Name: Remy
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1855,9 +1856,9 @@ CapsuleCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   m_Radius: 0.35939097
-  m_Height: 3.8089263
+  m_Height: 3.542616
   m_Direction: 1
-  m_Center: {x: -0.005789995, y: 1.8025035, z: 0.0551939}
+  m_Center: {x: -0.005789995, y: 1.9356587, z: 0.0551939}
 --- !u!95 &919132148774840058
 Animator:
   serializedVersion: 3
@@ -1867,7 +1868,7 @@ Animator:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6814214337375005204}
   m_Enabled: 1
-  m_Avatar: {fileID: 0}
+  m_Avatar: {fileID: 9000000, guid: fb1ed7f85cc93b1439545256112d2a4a, type: 3}
   m_Controller: {fileID: 9100000, guid: f3d8cdf1954a91e448bd2d785aeb231e, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
@@ -1877,6 +1878,24 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!143 &919132148774840060
+CharacterController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6814214337375005204}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Height: 3.3
+  m_Radius: 0.6
+  m_SlopeLimit: 45
+  m_StepOffset: 0.3
+  m_SkinWidth: 0.08
+  m_MinMoveDistance: 0.001
+  m_Center: {x: 0, y: 1.9, z: 0}
 --- !u!114 &2009630329934838701
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1889,26 +1908,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9de5466a7e32a8844958167ea2b5e510, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  controller: {fileID: 0}
-  speed: 6
---- !u!143 &919132148774840060
-CharacterController:
+  controller: {fileID: 919132148774840060}
+  cam: {fileID: 0}
+  speed: 3
+  turnSmoothTime: 0.1
+  turnsmoothVelocity: 0
+--- !u!114 &2625879324095087424
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6814214337375005204}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 2
-  m_Height: 3.8
-  m_Radius: 0.6
-  m_SlopeLimit: 45
-  m_StepOffset: 0.3
-  m_SkinWidth: 0.08
-  m_MinMoveDistance: 0.001
-  m_Center: {x: 0, y: 1.9, z: 0}
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d2ec160056921e4985b1e19ebbc1426, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnPoint1: {fileID: 0}
+  panel: {fileID: 0}
 --- !u!1 &6951387287981253964
 GameObject:
   m_ObjectHideFlags: 0
