@@ -6,6 +6,13 @@ TagManager:
   tags:
   - Store 1
   - Store 2
+  - Exit1
+  - Bread
+  - Salad
+  - Vegetables
+  - Fruits
+  - NPC
+  - NPC2
   layers:
   - Default
   - TransparentFX

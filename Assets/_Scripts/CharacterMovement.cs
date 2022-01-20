@@ -43,6 +43,5 @@ public class CharacterMovement : MonoBehaviour
             anim.SetInteger("AnimParam", 0);
         }
 
-
     }
 }

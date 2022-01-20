@@ -4,15 +4,23 @@ using UnityEngine;
 
 public class UIManager : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public Transform EnterPoint;
+    public Transform Exitpoint;
+    public GameObject player;
+    public Transform EnterPoint2;
+   
 
-    // Update is called once per frame
-    void Update()
+    public void OnPressYes()
     {
-        
+        //panel.SetActive(false);
+        player.transform.position = EnterPoint.transform.position;
+    }
+    public void OnPressYestoLeave()
+    {
+        player.transform.position = Exitpoint.transform.position;
+    }
+    public void OnPressYesEnter()
+    {
+        player.transform.position = EnterPoint2.transform.position;
     }
 }
