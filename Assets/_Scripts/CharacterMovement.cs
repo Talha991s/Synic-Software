@@ -10,6 +10,7 @@ public class CharacterMovement : MonoBehaviour
     public float speed = 6.0f;
     // updated here as well
 
+    //yoo
     public float turnSmoothTime = 0.1f;
 
     public float turnsmoothVelocity;
@@ -47,5 +48,7 @@ public class CharacterMovement : MonoBehaviour
 
     }
 
-    //GIt Task
+
+
+    //112223 whatever
 }
