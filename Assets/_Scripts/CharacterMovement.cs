@@ -8,10 +8,12 @@ public class CharacterMovement : MonoBehaviour
     public Transform cam;
 
     public float speed = 6.0f;
+    // updated here as well
 
     public float turnSmoothTime = 0.1f;
 
     public float turnsmoothVelocity;
+    // updated here as well
 
     Animator anim;
 
@@ -44,4 +46,6 @@ public class CharacterMovement : MonoBehaviour
         }
 
     }
+
+    //GIt Task
 }
