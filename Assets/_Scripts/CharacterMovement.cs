@@ -8,7 +8,7 @@ public class CharacterMovement : MonoBehaviour
     public Transform cam;
 
     public float speed = 6.0f;
-
+    //yoo
     public float turnSmoothTime = 0.1f;
 
     public float turnsmoothVelocity;
@@ -44,4 +44,8 @@ public class CharacterMovement : MonoBehaviour
         }
 
     }
+
+
+
+    //112223 whatever
 }
